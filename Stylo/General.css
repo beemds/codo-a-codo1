@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0e6f6;
+}
+
+::-webkit-scrollbar-thumb {
+    background:#DDA6DF;
+    border-radius: 50px;
+}
+
+ 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abril Fatface', cursive;
+} 
+
+body p{
+    font-family: 'Open Sans', sans-serif; 
+} 
+
+/*Header*/
+ .menu-header{
+    position: sticky;
+    background-color: #DDA6DF;
+    height: 5rem;
+    width: 100%;
+    line-height: 80px;
+} 
+
+.enlace{
+    position: absolute;
+    padding-left: 30px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 90px;
+    display: flex;
+    height: auto;
+    float: left;
+}
+
+.menu{
+float: right;
+list-style: none;
+margin-right: 20px;
+} 
+
+.menu li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-family: 'Abril Fatface', cursive;
+} 
+
+.menu li a{
+    color: RGB(95, 14, 72);
+    padding: 7px 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+} 
+
+li a:hover, li a.active {
+    background-color: RGB(142, 10, 105);
+    color: #DDA6DF;
+    transition: .5s;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: RGB(142, 10, 105);
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;}
+
+#check{
+    display: none;
+}
+
+/*footer*/
+.Pie-pagina{
+    width: 100%;
+    background-color: #DDA6DF;
+    display: flex;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.grupo1{
+    float: none;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0px 0px 0px;
+    font-size: 1,75rem;
+    color: RGB(95, 14, 72);
+}
+
+.logo-final p{
+    font-family: 'Abril Fatface', cursive;
+    font-weight: thin;
+}
+
+.grupo1 img{
+    width: 40px;
+    height: auto;
+}
+
+.small {
+    float: none;
+    margin: auto;   
+}
+
+.Redes{
+    background:#DDA6DF;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.Redes a{
+    text-decoration: none; 
+    display: inline-block;
+    padding: 7px 13px;
+    font-size: 2rem;
+    color:RGB(95, 14, 72);}
+
+.Redes a:hover, Redes a.active{
+    color: #560458;}
+
+.desarrollo {
+    color: #DDA6DF;
+    background: RGB(95, 14, 72);
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.desarrollo i {
+    color: white;
+    margin: 0.5rem;
+}
+
+@media (max-width:952px){
+    .enlace{
+        padding-left: 5px;
+        box-sizing: border-box;    
+}
+
+
+@media (max-width:858px){
+    main{
+        padding-top: 5rem;
+        box-sizing: border-box;
+}
+    .checkbtn{
+        display: block;
+}
+
+.menu-header{
+        position: fixed;  
+        z-index:100;
+}
+
+.menu{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        background: #DDA6DF;
+        top:79px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+}
+ 
+
+
+.menu li{
+        display: block;
+        margin: 1rem;
+        line-height: 30px;
+}
+
+.menu li a{
+        font-size: 4vh;}
+
+li a:hover, li a.active{
+        background-color: RGB(95, 14, 72);
+        color: #DDA6DF;
+        transition: .5s;  
+}
+
+#check:checked ~ .menu{
+    left: 0;
+}
+    
+
+    }
+
+@media (max-width:480px){
+    .enlace{
+        padding-left: 1rem;
+        box-sizing: border-box;}
+    
+    .menu li a{
+        font-size: 3vh;}
+    
+  }
