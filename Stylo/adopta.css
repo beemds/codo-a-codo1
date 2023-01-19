@@ -1,0 +1,80 @@
+.motivos {
+    position: relative;
+    margin: 2rem; 
+    display: flex;
+    flex-direction: column;}
+
+.motivos h2{
+    text-align: center;
+    line-height: 4rem;
+    text-transform: uppercase;  
+}
+
+
+.motivos  p {
+     line-height: 2rem;
+     text-align: justify;}
+
+.img-slides {
+    float: none;
+    position: relative;
+    background-color: aqua;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 1rem;
+
+}
+
+.cats{
+    width: 100%;
+    height: auto;
+    
+
+}
+        
+
+                 
+.refugios-opciones{
+    display: flex;
+    margin: 2rem;
+    line-height: 2rem;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.refugios-opciones h2{
+    text-decoration:underline;
+}
+
+
+.instagram{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;  
+}
+
+.instagram iframe{
+    margin: 1rem;
+    max-width: 32%;
+    border: none;
+    overflow: hidden;
+}
+
+@media (max-width:768px){
+    main{
+        padding-top: 5rem;
+    }
+
+.instagram {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    
+.instagram iframe {
+    max-width: none;
+}
+}
